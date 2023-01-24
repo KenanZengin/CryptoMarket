@@ -1,0 +1,16 @@
+.main{
+    background-color:#061301;
+    color: $f-wht;
+    @extend .w100-h100;
+    & > .container,& > .container-fluid{
+        padding: 50px 275px;
+    }
+    &-web{
+        &-title{
+           
+        }
+        &-section{
+            
+        }
+    } 
+}

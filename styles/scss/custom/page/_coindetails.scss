@@ -1,0 +1,44 @@
+.main{
+    .markettable{
+        padding: 50px 0;
+        .tbl-thead,.tbl-tbody{
+            .tbl-tr{
+                font-size: 16px !important;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: 30px 20px;
+                border-bottom: 1px solid $border-clr;
+                &-head{
+                    font-size: 14px !important;
+                    padding: 12px 20px !important;
+                    border-top: 1px solid $border-clr;
+                }
+                &-body{
+                    &:hover{
+                        background-color: $site-clr-bg-12;
+                    }
+                }
+                .tbl-th:not(:nth-child(1)),.tbl-td:not(:nth-child(1)){
+                    flex: 1 0 0%;
+                    width: 100%;
+                    max-width: 100%;
+                    text-align: end;
+                    }
+                .tbl-th:nth-child(1),.tbl-td:nth-child(1){
+                    width: 35px;
+                    text-align: start;
+                }
+                .name{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    padding-right: 50px;
+                    padding-left: 20px;
+                    text-align: start !important;
+                }
+            }                  
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.header{
+    background:$site-clr-linear-2;
+    color: $f-wht !important;
+    @extend .w100-h100;
+    max-height: 90px;
+    & > .container,& > .container-fluid{
+        padding: 15px 275px;
+    }
+    &-web{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        &-left{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex: 70% ;
+            width: 100%;
+            max-width: 100%;
+        }
+        &-right{
+            flex: 30% ;
+            position: relative;
+            .header-group{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                &-item{
+                    margin-left:20px;
+                    cursor: pointer;
+                    &:hover:not(:nth-child(3)){
+                        color: $site-clr-text-7 !important ;
+                    }
+                }
+                .portfolio{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        background-image: url(#{$path-assets-url}/img/portfolio.png#{$cache-busting});
+                        opacity: .7;
+                        left: -20px;
+                        top: 0px;
+                        bottom: 0px;
+                        width: 15px;
+                        @extend .bg-x-y-rp;
+                    }
+                }
+                .singup{                  
+                    background:$site-clr-linear-3;
+                    border-radius: 10px;
+                    button{
+                        display: flex;  
+                        padding: 5px 10px;
+                        color: $f-wht;    
+                        transition: all .3s;                   
+                        &:hover{
+                            background-color:$site-clr-bg-9  ;
+                            background-size: 700% 400%;
+                            border-color: $border-clr-2;
+                            box-shadow: $shadow-5;
+                        }
+                    }
+                }
+                .search{
+                    position: relative;
+                    button{
+                        position: relative;
+                        background-color: $site-clr-bg-10;
+                        padding: 10px 80px 10px 27px !important;
+                        text-align: start;
+                        color: $f-wht;
+                        box-shadow: $shadow-1;
+                        transition: all .4s;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            background-image: url(#{$path-assets-url}/img/search.svg#{$cache-busting});
+                            opacity: .7;
+                            left: 7px;
+                            top: 1px;
+                            bottom: 0px;
+                            width: 15px;
+                            @extend .bg-x-y-rp;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

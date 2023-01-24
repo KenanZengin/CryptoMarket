@@ -1,0 +1,45 @@
+
+//flex-set
+
+.flex-set1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+//text-align
+
+.txt-start{
+    text-align: start;
+}
+.txt-center{
+    text-align: center;
+}
+.txt-end{
+    text-align: end;
+}
+
+
+//after-before-img
+
+.bg-x-y-rp{
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0;
+}
+
+
+//w-100 h-100
+.w100-h100{
+    height: 100%;
+    width: 100%;
+}

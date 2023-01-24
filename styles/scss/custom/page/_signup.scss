@@ -1,0 +1,106 @@
+.modal{
+    display: block !important;
+    position: fixed;
+    width: 1200px;
+    @extend .w100-h100;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    overflow-y: auto;
+    border-radius: 0.5rem;
+    background: $site-clr-linear-4; 
+    border-radius: 0;   
+    &-signup{
+        max-width: 1200px;
+        margin: 100px auto;
+        background-color: $site-clr-bg-18!important;
+        position: relative;
+        color: $f-wht;
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: $shadow-2;
+        &-content{
+            position: relative;
+            display: flex;
+            width: 100%;
+            border: 1px solid rgba(0,0,0,.2);
+            border-radius:0.5rem ;
+            &-img{
+                flex: 50%;
+                img{
+                    @extend .w100-h100;
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+            &-body{
+                flex: 50%;
+                @extend .flex-col;
+                padding: 16px;
+
+                gap: 0 10px;
+                background-color:$site-clr-bg-17 !important;
+                .body-title{
+                    position: relative;
+                    text-align: center;
+                    img{
+                        margin-right: 10px;
+                        position: absolute;
+                        top: 5px;
+                        right: 0;
+                        }
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .body-inputs{
+                    padding: 30px 0px;
+                    .form-control {
+                        padding:18px 15px;
+                        margin: 20px 0;                        
+                        background-color:$site-clr-bg-15 ;
+                        border: 1px solid  $border-clr-3;
+                        &:focus{
+                            background-color:$site-clr-bg-16; 
+                            box-shadow:$shadow-4 ;
+                        }
+                    }
+                }
+                .body-buttons{
+                    @extend .flex-col;
+                    justify-content: center;
+                    text-align: center;
+                    width: 75%;
+                    margin: 0 auto;
+                    button{
+                        display: block;
+                        padding: 15px;
+                        color: $f-wht;
+                        background-color:$site-clr-bg-14 ;
+                        margin: 10px 0;
+                        border: 1px solid $border-clr-3  ;
+                        border-radius: 10px;
+                       
+                        &:hover{
+                            opacity: .8;
+                        }
+                        .google{
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                background-image: url(#{$path-img-url}/icons8-google-45.png#{$cache-busting});
+                                width: 45px;
+                                height: 45px;
+                                opacity: .7;
+                                left: 75px;
+                                top: -12px;
+                                bottom: 0px;
+                                @extend .bg-x-y-rp;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

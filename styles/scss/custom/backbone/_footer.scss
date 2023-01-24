@@ -1,0 +1,39 @@
+.footer{
+    background-color: $site-clr-bg-13;
+    color: $f-wht;
+    @extend .w100-h100;
+    & > .container,& > .container-fluid{
+        padding: 0px 275px;
+    }
+    &-web{
+        @extend .flex-set1;       
+        &-left{
+            flex: 60%;
+            p{
+                color: $site-clr-text-10 ;
+            }
+            button{
+                display: flex;  
+                padding: 5px 10px;
+                color: $f-wht;
+                background-color: $site-clr-bg-6 !important;   
+                margin: 30px 0;
+                transition: all .3s;     
+                padding: 10px 20px;
+                font-size: 16px !important;               
+                &:hover{
+                    background-color: transparent !important;
+                    background-size: 700% 400%;
+                    border-color: $border-clr-2;
+                    box-shadow: $shadow-5;
+                }
+            }
+        }
+        &-right{
+            img{
+                @extend .w100-h100;
+                border-radius: 2px;
+            }
+        }
+    }
+}

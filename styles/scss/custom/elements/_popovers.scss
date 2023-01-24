@@ -1,0 +1,83 @@
+
+.popover {
+    max-width: 400px !important;
+    z-index : 2000 !important;
+    display: block;
+    transform: none !important;
+    left: -100px !important;
+    top: -2px !important;
+    width: 350px;
+    text-shadow:none;
+    &-arrow{
+        display: none !important;
+    }
+    &-header {
+        padding:0 !important;
+        margin-bottom: 0;
+        background-color: $site-clr-bg-5 !important;
+        position: relative;
+        &::before{
+            display: none !important;
+        }
+            &::after{
+            content: "";
+            position: absolute;
+            background-image: url(#{$path-img-url}/icons8-search-20.png#{$cache-busting});
+            opacity: 0.7;
+            left: 2px;
+            top: 4px;
+            bottom: 0px;
+            width: 20px;
+            background-repeat: no-repeat;
+            background-position-y: 50%;
+            background-position-x: 0;
+            z-index: 100;
+        }
+        .form-control {
+            padding: 10px 22px;            
+            background-color: $site-clr-bg-5;
+            &:focus{
+                background-color: $site-clr-bg-5;                   
+                box-shadow:$shadow-4 ;
+            }
+        }
+    } 
+    &-body {
+        padding: 0;
+        color: $f-wht;
+        background-color:$site-clr-bg-5;
+        transition: all .2s;
+        padding: 0 14px;
+        .popover-items{
+            .popover-item{
+                @extend .flex-col;
+                gap: 5px 0;
+                padding: 0;
+                &-detay{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 0;
+                    &:hover{
+                        opacity: .8 ;
+                    }
+                    .item-left{
+                        display: flex;
+                        gap: 0 5px;
+                        p{
+                            color: $site-clr-text-8;
+                        }
+                        span{
+                            color: $site-clr-text-9;
+                            font-size: 12px !important;
+                        }
+                    }
+                    .item-right{
+                        color: $site-clr-text-9;
+                        font-size: 12px !important;
+                    }
+                }                
+            }
+        }
+    }   
+}  
+

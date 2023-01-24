@@ -1,0 +1,21 @@
+.header{
+    .header-navigation{
+        .navbar{
+            justify-content: flex-start !important;
+            &-nav{
+                justify-content: center;
+                flex-wrap: wrap;
+                .nav-item{
+                    padding: 0px 12px;
+                    .nav-link{
+                        color:  $site-clr-text-6;
+                        margin: 0;
+                        &:hover{
+                            color: $site-clr-text-7 ;
+                        }
+                    }
+                }
+            }
+        }     
+    }
+}

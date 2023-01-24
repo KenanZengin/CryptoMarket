@@ -1,0 +1,34 @@
+
+//button
+.btn {
+    display: inline-block;
+    padding: 0;
+    color: $site-clr-bg-7 ;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0 ;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+//form
+.form-control{
+    display: block;
+    color: $f-wht !important;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    border: none;
+    :focus{
+        border:none;
+        outline:none;
+        color: $f-wht !important;
+        box-shadow:$shadow-4 ;
+    }
+}
+
