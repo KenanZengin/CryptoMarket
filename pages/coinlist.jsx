@@ -15,12 +15,12 @@ const Coinlist= ({data}) => {
         </div>
       </div>
       <div className="tbl-tbody">
-        {data.map((crypto)=>(
-        <div className="tbl-tr  tbl-tr-body" key={crypto.id}>
+        {data?.map((crypto)=>(
+        <div className="tbl-tr  tbl-tr-body" key={crypto.market_cap_rank}>
           <div className="tbl-td rank"><span>{crypto.market_cap_rank}</span></div>
           <div className="tbl-td name"><span><img src={crypto.image} alt="/" width={28} /></span><p>{crypto.name}</p><p>{crypto.symbol.toUpperCase()}</p></div>
           <div className="tbl-td prc"><span>{crypto.current_price.toLocaleString()}</span></div>
-          <div className="tbl-td chng24h" style={{"color":`${crypto.price_change_percentage_24h >= 0 ? "#16c784" : "#b52d2d"}`}}><span>{crypto.price_change_percentage_24h.toFixed(2)}%</span></div>
+          <div className="tbl-td chng24h" style={{"color":`${crypto.price_change_percentage_24h >= 0 ? "#16c784" : "#b52d2d"}`}}><span>{crypto.price_change_percentage_24h}%</span></div>
           <div className="tbl-td mrktcp"><span>{crypto.market_cap.toLocaleString()}</span></div>
           <div className="tbl-td vlm24h"><span>{crypto.total_volume.toLocaleString()}</span></div>
           <div className="tbl-td spply"><span>{crypto.total_supply ? crypto.total_supply.toLocaleString() :crypto.circulating_supply }</span></div>
@@ -32,3 +32,4 @@ const Coinlist= ({data}) => {
 }
 
 export default Coinlist
+

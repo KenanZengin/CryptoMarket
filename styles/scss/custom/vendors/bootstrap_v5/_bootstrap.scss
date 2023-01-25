@@ -1,1 +1,73 @@
-@import "~bootstrap"
+/*!
+ * Bootstrap v5.2.0 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// Configuration & Mixins
+@import "~bootstrap/scss/functions.scss";
+@import "~bootstrap/scss/variables.scss";
+@import "~bootstrap/scss/maps.scss";
+@import "~bootstrap/scss/mixins/deprecate.scss";
+@import "~bootstrap/scss/mixins/breakpoints.scss";
+@import "~bootstrap/scss/mixins/color-scheme.scss";
+@import "~bootstrap/scss/mixins/resize.scss";
+@import "~bootstrap/scss/mixins/visually-hidden.scss";
+@import "~bootstrap/scss/mixins/reset-text.scss";
+@import "~bootstrap/scss/mixins/text-truncate.scss";
+@import "~bootstrap/scss/mixins/utilities.scss";
+@import "~bootstrap/scss/mixins/alert.scss";
+@import "~bootstrap/scss/mixins/backdrop.scss";
+@import "~bootstrap/scss/mixins/buttons.scss";
+@import "~bootstrap/scss/mixins/caret.scss";
+@import "~bootstrap/scss/mixins/pagination.scss";
+@import "~bootstrap/scss/mixins/lists.scss";
+@import "~bootstrap/scss/mixins/forms.scss";
+@import "~bootstrap/scss/mixins/border-radius.scss";
+@import "~bootstrap/scss/mixins/box-shadow.scss";
+@import "~bootstrap/scss/mixins/gradients.scss";
+@import "~bootstrap/scss/mixins/transition.scss";
+@import "~bootstrap/scss/mixins/clearfix.scss";
+@import "~bootstrap/scss/mixins/container.scss";
+@import "~bootstrap/scss/mixins/grid.scss";
+@import "~bootstrap/scss/vendor/rfs.scss";
+
+// Layout & Components
+@import "~bootstrap/scss/root.scss";
+@import "~bootstrap/scss/reboot.scss";
+@import "~bootstrap/scss/utilities.scss";
+@import "~bootstrap/scss/type.scss";
+@import "~bootstrap/scss/containers.scss";
+@import "~bootstrap/scss/grid.scss";
+@import "~bootstrap/scss/forms/form-check.scss";
+@import "~bootstrap/scss/forms/form-control.scss";
+@import "~bootstrap/scss/forms/form-range.scss";
+@import "~bootstrap/scss/forms/form-select.scss";
+@import "~bootstrap/scss/forms/form-text.scss";
+@import "~bootstrap/scss/forms/input-group.scss";
+@import "~bootstrap/scss/forms/labels.scss";
+@import "~bootstrap/scss/forms/validation.scss";
+@import "~bootstrap/scss/buttons.scss";
+@import "~bootstrap/scss/transitions.scss";
+@import "~bootstrap/scss/dropdown.scss";
+@import "~bootstrap/scss/button-group.scss";
+@import "~bootstrap/scss/nav.scss";
+@import "~bootstrap/scss/navbar.scss";
+@import "~bootstrap/scss/pagination.scss";
+@import "~bootstrap/scss/alert.scss";
+@import "~bootstrap/scss/close.scss";
+@import "~bootstrap/scss/modal.scss";
+@import "~bootstrap/scss/popover.scss";
+@import "~bootstrap/scss/spinners.scss";
+@import "~bootstrap/scss/placeholders.scss";
+
+// Helpers
+@import "~bootstrap/scss/helpers/clearfix.scss";
+@import "~bootstrap/scss/helpers/position.scss";
+@import "~bootstrap/scss/helpers/stretched-link.scss";
+@import "~bootstrap/scss/helpers/visually-hidden.scss";
+@import "~bootstrap/scss/helpers/vr.scss";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api.scss";
