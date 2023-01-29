@@ -3,13 +3,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState,useRef} from "react";
 import { signOut, useSession} from "next-auth/react";
-import useSWR from 'swr'
 import { Container,Navbar,Nav,Button,Popover,Overlay,Form } from "react-bootstrap"
+import useSWR from 'swr'
 import myimg from 'public/assets/img/icons-bitcoin-60.png'
 import myimg2 from 'public/assets/img/icons8-closed-sign-45.png'
 
 const fetcher = async () => {
-  const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false');
+  const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false');
   const data = await response.json();
   return data
 }
@@ -24,14 +24,15 @@ const Header = () => {
 
   const {data} = useSWR('crypto',fetcher)
   const {data : session} = useSession()
-  const ref = useRef(null);
+
   const {push} = useRouter()
+  const ref = useRef(null);
 
 
 
 
 
-  const modalClick = () => push("auth/signup")
+  const modalClick = () => push("../auth/signup")
 
   const handleSingOut = async() => {const data = await signOut({redirect:false,callbackUrl:'/'})
     push( data.url)

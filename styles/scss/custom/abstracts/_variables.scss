@@ -31,14 +31,15 @@ $site-clr-bg-13                         : #152118;
 $site-clr-bg-14                         : #556f79;
 $site-clr-bg-15                         : #233846;
 $site-clr-bg-16                         : #102128;
-$site-clr-bg-17                         : #052434 ;
+$site-clr-bg-17                         : #052434;
 $site-clr-bg-18                         : #272727;
+$site-clr-bg-19                         : #061301;
 $site-clr                               : #38393b;
 $site-clr-2                             : #212121;
 
 
 //Site-general-linear-gradient
-$site-clr-linear                        : linear-gradient(to top ,$site-clr-bg-3 98%,rgba(43, 45, 46,0.99) 2%);
+$site-clr-linear                        : linear-gradient(to top ,#2b2d2e 98%,rgba(43, 45, 46,0.99) 2%);
 $site-clr-linear-2                      : linear-gradient(143deg, rgba(33,47,29,1) 3%, rgba(23,40,23,1) 48%);
 $site-clr-linear-3                      : linear-gradient(65deg,#00a878,#0fffba);
 $site-clr-linear-4                      : linear-gradient(143deg, rgba(7,37,54,1) 34%, rgba(9,60,92,1) 72%);

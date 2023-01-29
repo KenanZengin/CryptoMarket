@@ -30,15 +30,27 @@
                     width: 35px;
                     text-align: start;
                 }
-                .name{
-                    display: flex;
-                    align-items: center;
-                    gap: 0 10px;
+                .name{  
                     padding-right: 50px;
                     padding-left: 20px;
                     text-align: start !important;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 5px;
+                        font-size: 16px;
+                        color: $f-wht;
+                        white-space: normal;
+                        max-height: 28px;
+                    }
                 }
             }                  
+        }
+        .tbl-thead{
+            position: sticky;
+            top: 0;
+            z-index: 101;
+            background-color: $site-clr-bg-19
         }
     }
 }

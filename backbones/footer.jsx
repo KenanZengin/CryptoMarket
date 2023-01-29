@@ -12,7 +12,7 @@ const Footer = () => {
   const {data : session} = useSession() 
   const {push} = useRouter()
   
-  const  goSignup = () => push("auth/signup")
+  const  goSignup = () => push("../auth/signup")
   return (
     <footer className='footer'>
       <Container fluid>

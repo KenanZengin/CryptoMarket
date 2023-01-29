@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import {Container,ButtonGroup,Button} from "react-bootstrap"
-import Coinlist from "./coinlist";
+import Coinlist from "./coinList/coinlist";
 
 
 
@@ -9,6 +9,8 @@ import Coinlist from "./coinlist";
 
 export default function Home({data}) {
   const {push} = useRouter();
+  const router = useRouter();
+  console.log(router.asPath);
 
   return (
     <main className="main">
@@ -22,14 +24,20 @@ export default function Home({data}) {
               <Coinlist data={data}/>
             </div>
           </div>
+          <div className="main-web-bottom">
+            <ul>
+              <li><Image src={"/assets/img/left.png" } alt="/" width={18} height={18} disabled /></li>
+              <li  className="active">1</li>
+              <li  onClick={()=>push(`coinPages/${2}`)}>2</li>
+              <li  onClick={()=>push(`coinPages/${3}`)}>3</li>
+              <li  onClick={()=>push(`coinPages/${4}`)}>4</li>
+              <li  onClick={()=>push(`coinPages/${5}`)}>5</li>
+              <li  onClick={()=>push(`coinPages/${2}`)}><Image src={"/assets/img/right.png"} alt="/" width={18} height={18} /></li>
+
+            </ul>
+          </div>
         </div>
-        <ButtonGroup aria-label="Basic example" style={{"display":"flex","gap" : "0 15px","justifyContent":"space-between"}}>
-          <Button variant="secondary" onClick={()=>push(`/`)}>1</Button>
-          <Button variant="secondary" onClick={()=>push(`coinPages/${2}`)}>2</Button>
-          <Button variant="secondary" onClick={()=>push(`coinPages/${3}`)}>3</Button>
-          <Button variant="secondary" onClick={()=>push(`coinPages/${4}`)}>4</Button>
-          <Button variant="secondary" onClick={()=>push(`coinPages/${5}`)}>5</Button>
-        </ButtonGroup>
+
       </Container>
     </main>
   )

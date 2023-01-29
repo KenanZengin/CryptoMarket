@@ -1,17 +1,34 @@
+import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
-import {Container,ButtonGroup,Button} from "react-bootstrap"
-import Coinlist from "../coinlist";
-const CoinPages = ({data}) => {
-  const {push} = useRouter()
-  const [pageNumber,setPageNumber] = useState(1)
+import {Container} from "react-bootstrap"
+import Coinlist from "../coinList/coinlist";
+const CoinPages = ({data}) =>{
 
-  const keno = () => {
-    push(`${pageNumber+1}`);
-    setPageNumber(pageNumber+1)
-    console.log(pageNumber);
+  const {push} = useRouter()
+  const router = useRouter()
+  const {id} = router.query;
+
+  
+
+
+  const previousPage =  () =>{
+    push(`${parseInt(id)-1}`)
+    if(router.asPath == ('/coinPages/2')){
+      push('../')
+    }
+  }
+  const nextPage1 = () => {
+    push(`${parseInt(id)+1}`);  
+  }
+  const nextPage2 = () => {
+    push(`${parseInt(id)+2}`);  
+  }
+  const nextPage3 = () => {
+    push(`${parseInt(id)+3}`);  
   }
   
+
+
   return (
     <main className="main">
     <Container fluid>
@@ -24,14 +41,29 @@ const CoinPages = ({data}) => {
             <Coinlist data={data}/>
           </div>
         </div>
+        <div className="main-web-bottom">
+          <ul >
+            <li onClick={()=>previousPage()}><Image src={"/assets/img/left.png"} width={18} height={18} /></li>
+            <li onClick={()=>push(`../`)}>1</li>
+
+            <li className="break">...</li>
+            
+            <li className={router.asPath==`/coinPages/${id}`? "active" : ""}>{parseInt(id)}</li>
+            <li onClick={()=>nextPage1()}>{parseInt(id)+1}</li>
+            <li onClick={()=>nextPage2()}>{parseInt(id)+2}</li>
+            <li onClick={()=>nextPage3()}>{parseInt(id)+3}</li>
+            
+            <li className="break">...</li>
+            
+            <li onClick={()=>push(`/coinPages/40`)}>40</li>
+            <li onClick={()=>nextPage1()}><Image src={"/assets/img/right.png"} width={18} height={18} /></li>
+             
+               
+
+          </ul>
+        </div>
       </div>
-      <ButtonGroup aria-label="Basic example" style={{"display":"flex","gap" : "0 15px","justifyContent":"space-between"}}>
-        <Button variant="secondary" onClick={()=>push(`../`)}>1</Button>
-        <Button variant="secondary" onClick={keno}>{pageNumber+ 1}</Button>
-        <Button variant="secondary" onClick={keno}>{pageNumber+ 2}</Button>
-        <Button variant="secondary" onClick={keno}>{pageNumber+ 3}</Button>
-        <Button variant="secondary" onClick={keno}>{pageNumber+ 4}</Button>
-      </ButtonGroup>
+
     </Container>
 
   </main>
