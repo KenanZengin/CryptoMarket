@@ -14,6 +14,7 @@ const Footer = () => {
   const {push} = useRouter()
   
   const  goSignup = () => push("../auth/signup")
+  
   return (
     <footer className='footer'>
       <Container fluid>
