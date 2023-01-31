@@ -1,5 +1,6 @@
-import Header from '@/backbones/header'
-import Footer from '@/backbones/footer'
+import Header from '../backbones/header'
+import Footer from '../backbones/footer'
+
 const Layout = ({children}) => {
   return (
     <>  
