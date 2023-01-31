@@ -1,4 +1,3 @@
-
 //Site-general-text-color
 $site-clr-text                          : #F8EDE3;
 $site-clr-text-2                        : #A2B29F;
@@ -36,20 +35,23 @@ $site-clr-bg-18                         : #272727;
 $site-clr-bg-19                         : #061301;
 $site-clr-bg-20                         : #223a4d;
 $site-clr-bg-21                         : #15212a;
-$site-clr                               : #38393b;
-$site-clr-2                             : #212121;
 
 
 //Site-general-linear-gradient
-$site-clr-linear                        : linear-gradient(to top ,#2b2d2e 98%,rgba(43, 45, 46,0.99) 2%);
-$site-clr-linear-2                      : linear-gradient(180deg, rgba(23,24,27,0.9920343137254902) 0%, rgba(84,84,154,1) 0%, rgba(30,51,49,1) 0%);
-$site-clr-linear-3                      : linear-gradient(65deg,#00a878,#0fffba);
-$site-clr-linear-4                      : linear-gradient(143deg, rgba(7,37,54,1) 34%, rgba(9,60,92,1) 72%);
+$site-linear                            : linear-gradient(to top ,#2b2d2e 98%,rgba(43, 45, 46,0.99) 2%);
+$site-linear-2                          : linear-gradient(180deg, rgba(23,24,27,0.9920343137254902) 0%, rgba(84,84,154,1) 0%, rgba(30,51,49,1) 0%);
+$site-linear-3                          : linear-gradient(65deg,#00a878,#0fffba);
+$site-linear-4                          : linear-gradient(143deg, rgba(7,37,54,1) 34%, rgba(9,60,92,1) 72%);
+$site-linear-5                          : linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);          
+$site-linear-6                          : linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+$site-linear-7                          : linear-gradient(180deg, rgba(31,34,28,1) 0%, rgba(10,22,15,1) 100%, rgba(20,33,26,0.9920343137254902) 100%);
+
 
 //Site-general-border-clr
 $border-clr                             :#313330;
 $border-clr-2                           :#00f5ae;
 $border-clr-3                           :#707171;
+
 
 //Site-general-shadow
 $shadow-1                               :rgba(0, 0, 0, 0.35) 0px 5px 15px;

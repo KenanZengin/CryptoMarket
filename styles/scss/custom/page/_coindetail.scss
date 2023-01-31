@@ -1,6 +1,6 @@
 .coindetail{
     // background-color:#061301;
-    background: linear-gradient(180deg, rgba(31,34,28,1) 0%, rgba(10,22,15,1) 100%, rgba(20,33,26,0.9920343137254902) 100%);
+    background: $site-linear-7;
     color: $f-wht;
     & > .container,& > .container-fluid{
         padding: 20px 275px;

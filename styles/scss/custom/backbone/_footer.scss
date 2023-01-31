@@ -1,5 +1,5 @@
 .footer{
-    background:$site-clr-linear-2;
+    background:$site-linear-2 ;
     color: $f-wht;
     @extend .w100-h100;
     & > .container,& > .container-fluid{
@@ -16,7 +16,7 @@
                 display: flex;  
                 padding: 5px 12px;
                 color: $f-wht;
-                background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);          
+                background-image: $site-linear-5;
                 margin: 30px 0;
                 transition: all .3s;     
                 padding: 10px 20px;
