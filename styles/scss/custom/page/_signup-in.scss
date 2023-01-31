@@ -2,14 +2,13 @@
     display: block !important;
     position: fixed;
     width: 1200px;
+    background: $site-linear-4; 
     @extend .w100-h100;
     top: 0;
     left: 0;
     z-index: 1050;
     overflow-y: auto;
     border-radius: 0.5rem;
-    background: $site-linear-4; 
-    border-radius: 0;   
     &-signup{
         max-width: 1200px;
         margin: 100px auto;

@@ -1,10 +1,6 @@
 .coindetail{
-    // background-color:#061301;
     background: $site-linear-7;
     color: $f-wht;
-    & > .container,& > .container-fluid{
-        padding: 20px 275px;
-    }
     &-top{
         display: flex;
         gap: 0 8px;    

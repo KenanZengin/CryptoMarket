@@ -2,10 +2,6 @@
     background:$site-linear-2;
     color: $f-wht !important;
     @extend .w100-h100;
-    max-height: 90px;
-    & > .container,& > .container-fluid{
-        padding: 15px 275px;
-    }
     &-web{
         display: flex;
         flex-wrap: wrap;
@@ -20,6 +16,7 @@
             max-width: 100%;
             img{
                 border-radius: 20px;
+                height: 60px;
             }
         }
         &-right{
@@ -65,7 +62,7 @@
                     border-radius: 10px;
                     button{
                         display: flex;  
-                        padding: 5px 12px !important;
+                        padding: 5px 10px !important;
                         color: $f-wht;    
                         transition: all .3s;
                         background-image: $site-linear-6;              

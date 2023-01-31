@@ -1,13 +1,11 @@
 .main{
     background-color:$site-clr-bg-19;
+    
     color: $f-wht;
     @extend .w100-h100;
-    & > .container,& > .container-fluid{
-        padding: 50px 275px;
-    }
     &-web{
         &-title{
-           
+           padding-top:20px ;
         }
         &-section{
             

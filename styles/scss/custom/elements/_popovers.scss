@@ -1,13 +1,12 @@
-
 .popover {
-    max-width: 400px !important;
-    z-index : 2000 !important;
     display: block;
-    transform: none !important;
-    left: -100px !important;
-    top: -2px !important;
-    width: 350px;
+    transform: none ;
+    left: -97px !important;
+    top: -52px !important;
+    width: 360px;
+    max-width: 400px !important; 
     text-shadow:none;
+    z-index : 2000 ;
     &-arrow{
         display: none !important;
     }
