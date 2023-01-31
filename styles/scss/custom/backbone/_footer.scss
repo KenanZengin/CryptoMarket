@@ -1,5 +1,5 @@
 .footer{
-    background-color: $site-clr-bg-13;
+    background:$site-clr-linear-2;
     color: $f-wht;
     @extend .w100-h100;
     & > .container,& > .container-fluid{
@@ -14,15 +14,17 @@
             }
             button{
                 display: flex;  
-                padding: 5px 10px;
+                padding: 5px 12px;
                 color: $f-wht;
-                background-color: $site-clr-bg-6 !important;   
+                background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);          
                 margin: 30px 0;
                 transition: all .3s;     
                 padding: 10px 20px;
-                font-size: 16px !important;               
+                font-size: 16px !important;        
+                border-color: transparent;
+       
                 &:hover{
-                    background-color: transparent !important;
+                    background-image: right center;
                     background-size: 700% 400%;
                     border-color: $border-clr-2;
                     box-shadow: $shadow-5;
@@ -32,7 +34,7 @@
         &-right{
             img{
                 @extend .w100-h100;
-                border-radius: 2px;
+                border-radius: 35%;
             }
         }
     }

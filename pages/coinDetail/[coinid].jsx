@@ -55,7 +55,7 @@ const CoinDetail = ({data}) => {
 								</div>
 								<div>
 									<p>Fully Diluted Valuation</p>
-									<span>{data.market_data.fully_diluted_valuation.usd.toLocaleString('en-US')}</span>  	
+									<span>{data.market_data.fully_diluted_valuation.usd? data.market_data.fully_diluted_valuation.usd.toLocaleString('en-US'):"--"}</span>  	
 								</div>
 							</div>
 							<div className="info-right">

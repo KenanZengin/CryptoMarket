@@ -36,9 +36,11 @@
         .form-control {
             padding: 10px 22px;            
             background-color: $site-clr-bg-5;
+            border-color: transparent;
             &:focus{
                 background-color: $site-clr-bg-5;                   
                 box-shadow:$shadow-4 ;
+                border-color: transparent;
             }
         }
     } 

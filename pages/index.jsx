@@ -27,17 +27,15 @@ export default function Home({data}) {
           <div className="main-web-bottom">
             <ul>
               <li><Image src={"/assets/img/left.png" } alt="/" width={18} height={18} disabled /></li>
-              <li  className="active">1</li>
+              <li  className="active" >1</li>
               <li  onClick={()=>push(`coinPages/${2}`)}>2</li>
               <li  onClick={()=>push(`coinPages/${3}`)}>3</li>
               <li  onClick={()=>push(`coinPages/${4}`)}>4</li>
               <li  onClick={()=>push(`coinPages/${5}`)}>5</li>
               <li  onClick={()=>push(`coinPages/${2}`)}><Image src={"/assets/img/right.png"} alt="/" width={18} height={18} /></li>
-
             </ul>
           </div>
         </div>
-
       </Container>
     </main>
   )

@@ -5,7 +5,7 @@ import { useState,useRef} from "react";
 import { signOut, useSession} from "next-auth/react";
 import { Container,Navbar,Nav,Button,Popover,Overlay,Form } from "react-bootstrap"
 import useSWR from 'swr'
-import myimg from 'public/assets/img/icons-bitcoin-60.png'
+import myimg from 'public/assets/img/boga.jpg'
 import myimg2 from 'public/assets/img/icons8-closed-sign-45.png'
 
 const fetcher = async () => {
@@ -32,7 +32,6 @@ const Header = () => {
 
 
 
-  const modalClick = () => push("../auth/signup")
 
   const handleSingOut = async() => {const data = await signOut({redirect:false,callbackUrl:'/'})
     push( data.url)
@@ -71,7 +70,7 @@ const Header = () => {
         <div className="header-web">  
           <div className="header-web-left">
               <Link href={"/"}>
-                <Image src={myimg}  alt="/" />
+                <Image src={myimg}  alt="/" width={100}/>
               </Link>
               <div className="header-navigation">
               <Navbar>
@@ -94,11 +93,11 @@ const Header = () => {
               <div className="header-group-item portfolio">
                 Portfolio
               </div>
-              <div className="header-group-item login">
-                Login
+              <div className="header-group-item login" style={{"display":`${session ? "none":"block"}`}}>
+               <Button onClick={()=>push("../auth/signin")}>Log in</Button>
               </div>
               <div className="header-group-item  singup">
-                {session ?  <Button variant="success" onClick={handleSingOut}> Sign out </Button>: <Button variant="success" onClick={modalClick}> Sign up </Button>}
+                {session ?  <Button  onClick={handleSingOut}> Sign out </Button>: <Button  onClick={()=>push("../auth/signup")}> Sign up </Button>}
                 {/* <Button variant="success" onClick={modalClick}> Sign up </Button> */}
               </div>
               <div className="header-group-item search">
@@ -138,7 +137,6 @@ const Header = () => {
                                 </div>
                                 : ""
                             ))}
-
                           </div>
                         </div>
                       </Popover.Body>

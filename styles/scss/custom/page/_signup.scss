@@ -36,12 +36,12 @@
                 flex: 50%;
                 @extend .flex-col;
                 padding: 16px;
-
+                text-align: center;
                 gap: 0 10px;
                 background-color:$site-clr-bg-17 !important;
                 .body-title{
                     position: relative;
-                    text-align: center;
+                    
                     img{
                         margin-right: 10px;
                         position: absolute;
@@ -55,32 +55,38 @@
                 }
                 .body-inputs{
                     padding: 30px 0px;
-                    .form-control {
-                        padding:18px 15px;
-                        margin: 20px 0;                        
-                        background-color:$site-clr-bg-15 ;
-                        border: 1px solid  $border-clr-3;
-                        &:focus{
-                            background-color:$site-clr-bg-16; 
-                            box-shadow:$shadow-4 ;
+                    .form-floating{
+                        input{
+                            padding:40px 0 20px 11px;
+                            margin: 50px 0;                        
+                            background-color:$site-clr-bg-15 ;
+                            display: block;
+                            color: $f-wht !important;
+                            width: 100%;
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 1.5;                          
+                            &:focus{
+                                background-color:$site-clr-bg-16; 
+                                box-shadow:$shadow-4 ;
+                                outline:none;
+                                color: $f-wht !important;                                
+                            }
+                        }
+                        label{
+                            display: flex;
+                            align-items: center;
                         }
                     }
-                }
-                .body-buttons{
-                    @extend .flex-col;
-                    justify-content: center;
-                    text-align: center;
-                    width: 75%;
-                    margin: 0 auto;
                     button{
                         display: block;
-                        padding: 15px;
-                        color: $f-wht;
-                        background-color:$site-clr-bg-14 ;
-                        margin: 10px 0;
+                        padding: 15px 50px;
+                        margin: 10px auto;
+                        width: 70%;
+                        color: $f-wht !important;
+                        background-color: $site-clr-bg-21 !important;                     
                         border: 1px solid $border-clr-3  ;
-                        border-radius: 10px;
-                       
+                        border-radius: 10px;                       
                         &:hover{
                             opacity: .8;
                         }
@@ -93,12 +99,15 @@
                                 width: 45px;
                                 height: 45px;
                                 opacity: .7;
-                                left: 75px;
+                                left: 30px;
                                 top: -12px;
                                 bottom: 0px;
                                 @extend .bg-x-y-rp;
                             }
                         }
+                    }
+                    p{
+                        margin: 25px 0 !important;
                     }
                 }
             }

@@ -3,7 +3,8 @@ import { useRouter } from "next/router";
 import { useState } from 'react';
 import {useSession} from "next-auth/react";
 import {Container,Button} from "react-bootstrap"
-import myimg from 'public/assets/img/footer-logo22.png'
+
+import myimg from 'public/assets/img/boga.jpg'
 
 
 

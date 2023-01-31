@@ -18,6 +18,9 @@
             flex: 70% ;
             width: 100%;
             max-width: 100%;
+            img{
+                border-radius: 20px;
+            }
         }
         &-right{
             flex: 30% ;
@@ -47,18 +50,29 @@
                         @extend .bg-x-y-rp;
                     }
                 }
+                .login{
+                    button{
+                        border: none;
+                        background-color: transparent;
+                        padding: 0;
+                        &:hover{
+                            color: $site-clr-text-7;
+                        }
+                    }
+                }
                 .singup{                  
-                    background:$site-clr-linear-3;
+                    background-color:$site-clr-bg-20  ;
                     border-radius: 10px;
                     button{
                         display: flex;  
-                        padding: 5px 10px;
+                        padding: 5px 12px !important;
                         color: $f-wht;    
-                        transition: all .3s;                   
+                        transition: all .3s;
+                        background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);                        border-color: transparent;
+                        border-color: transparent;
                         &:hover{
-                            background-color:$site-clr-bg-9  ;
+                            background-image: right center;
                             background-size: 700% 400%;
-                            border-color: $border-clr-2;
                             box-shadow: $shadow-5;
                         }
                     }
@@ -73,6 +87,7 @@
                         color: $f-wht;
                         box-shadow: $shadow-1;
                         transition: all .4s;
+                        border-color: transparent;
                         &::after{
                             content: "";
                             position: absolute;

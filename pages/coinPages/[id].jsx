@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import {Container} from "react-bootstrap"
 import Coinlist from "../coinList/coinlist";
+
 const CoinPages = ({data}) =>{
 
   const {push} = useRouter()
@@ -57,15 +58,10 @@ const CoinPages = ({data}) =>{
             
             <li onClick={()=>push(`/coinPages/40`)}>40</li>
             <li onClick={()=>nextPage1()}><Image src={"/assets/img/right.png"} width={18} height={18} /></li>
-             
-               
-
           </ul>
         </div>
       </div>
-
     </Container>
-
   </main>
   )
 }
