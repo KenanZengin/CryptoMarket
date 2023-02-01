@@ -7,6 +7,11 @@
                 flex-wrap: wrap;
                 .nav-item{
                     padding: 0px 12px;
+                    @include BootstrapMaxWidthResponsive(xl){
+                        &:not(:first-child){
+                            display: none;
+                        }
+                    }
                     .nav-link{
                         color:  $site-clr-text-6;
                         margin: 0;

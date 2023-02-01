@@ -1,3 +1,22 @@
 .container > *, .container-fluid > *{
-    padding: 15px 275px !important;
+
+
+    @include BootstrapMaxWidthResponsive(1k){
+        padding: 15px 275px !important    
+    }
+    @include BootstrapMaxWidthResponsive(hd){ 
+        padding: 15px 150px !important;      
+    }
+    @include BootstrapMaxWidthResponsive(xl){ 
+        padding: 15px 100px !important;      
+    }
+    @include BootstrapMaxWidthResponsive(lg){ 
+        padding: 15px 20px !important;      
+    }
+    @include BootstrapMaxWidthResponsive(md){ 
+        padding: 15px 0 !important;      
+}   
+
+
+
 }

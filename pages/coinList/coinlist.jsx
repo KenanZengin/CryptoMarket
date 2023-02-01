@@ -3,7 +3,9 @@ import Link from "next/link"
 
 const Coinlist= ({data}) => {
   
-
+  if(!data || !data.length){
+    return <div>coinecko.com stopped api support, try again in 1 minute</div>
+  }
 
 
   return (
@@ -20,7 +22,7 @@ const Coinlist= ({data}) => {
         </div>
       </div>
       <div className="tbl-tbody">
-        {data?.map((crypto)=>(
+        {data.map((crypto)=>(
         <div className="tbl-tr  tbl-tr-body" key={crypto.market_cap_rank}>
           <div className="tbl-td rank"><span>{crypto.market_cap_rank}</span></div>
           <div className="tbl-td name"><Link href={`/coinDetail/${crypto.id.toLowerCase()}`}><span><img src={crypto.image} alt="/" width={28} /></span><p>{crypto.name}</p><p>{crypto.symbol.toUpperCase()}</p></Link></div>

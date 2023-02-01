@@ -14,6 +14,9 @@
             flex: 70% ;
             width: 100%;
             max-width: 100%;
+            @include BootstrapMaxWidthResponsive(1k){
+                flex: 60%;
+            }
             img{
                 border-radius: 20px;
                 height: 60px;
@@ -22,6 +25,9 @@
         &-right{
             flex: 30% ;
             position: relative;
+            @include BootstrapMaxWidthResponsive(1k){
+                flex: 40%;
+            }
             .header-group{
                 display: flex;
                 justify-content: flex-end;

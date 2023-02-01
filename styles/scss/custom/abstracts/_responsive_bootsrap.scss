@@ -1,5 +1,4 @@
 
-//bootsrap-breakpoints
 $breakpoints:(
     xz: 0,
     xx: 400px,
@@ -15,5 +14,8 @@ $breakpoints:(
 );
 
 
-
-
+@mixin BootstrapMaxWidthResponsive($point) {
+    @media (max-width: (map-get($breakpoints, $point) - 1)) {
+           @content
+    }
+}

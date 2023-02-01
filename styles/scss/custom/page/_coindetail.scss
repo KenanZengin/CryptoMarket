@@ -116,8 +116,27 @@
                 p{
                     flex:40%
                 }
-                .links{
+                .links,.vltn{
                     flex:60%; 
+                }
+                .com{
+                     @include BootstrapMaxWidthResponsive(hd){  
+                                display: flex;
+                                flex-direction: column;  
+                                gap: 4px 0;
+                                a{
+                                    max-width: 60%;
+                                }         
+                    }
+                    @include BootstrapMaxWidthResponsive(lg){  
+                        a{  
+                            width: 40%;
+                            text-align: center;
+                            img{
+                                display: none;
+                            }
+                        }         
+                    }
                 }
                 a,span{
                     color: $f-wht !important;

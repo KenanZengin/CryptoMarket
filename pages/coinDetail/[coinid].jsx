@@ -86,7 +86,7 @@ const CoinDetail = ({data}) => {
 							</div>
 							<div>
 								<p>Community</p> 
-								<div className="links">
+								<div className="links com">
 									<a href={data.links.subreddit_url} target="_blank"> <img src="/assets/img/reddit.png" alt="" />Reddit</a>
 									<a href={`https://twitter.com/${data.links.twitter_screen_name}`} target="_blank"> <img src="/assets/img/twitter.png" alt="" /> Twitter</a>
 								</div>
@@ -101,31 +101,31 @@ const CoinDetail = ({data}) => {
 							</div>
 							<div>
 								<p>Community score</p>   
-								<div className="links">
+								<div className="vltn">
 									<span>{data.community_score ? `${data.community_score} / 100` : "--"}</span>
 								</div>
 							</div>
 							<div>
 								<p>Developer score</p>    
-								<div className="links">
+								<div className="vltn">
 									<span>{data.developer_score  ?`${data.developer_score} / 100` :"--" }</span>
 								</div>
 							</div>
 							<div>
 								<p>Liquitidy score</p>    
-								<div className="links">
+								<div className="vltn">
 									<span>{data.liquidity_score ? `${data.liquidity_score} / 100`  : "--"} </span>
 								</div>
 							</div>
 							<div>
 								<p>Hashing Algorithm </p> 
-								<div className="links">
+								<div className="vltn">
 									<span>{data.hashing_algorithm ? data.hashing_algorithm : "--"}</span>
 								</div>
 							</div>
 							<div>
 								<p>Tags</p>
-								<div className="links">
+								<div className="vltn">
 									<span>{data.categories[0] ? data.categories[0] : "--" }</span>
 									
 								</div>
