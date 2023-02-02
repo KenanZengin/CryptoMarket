@@ -81,7 +81,7 @@ const CoinDetail = ({data}) => {
 							<div>
 								<p>Website</p>
 								<div className="links">
-									<a href={data.links.homepage[0]} target="_blank">{data.name}.org</a>
+									<a href={data.links.homepage[0]} target="_blank">{data.symbol}.org</a>
 								</div>
 							</div>
 							<div>

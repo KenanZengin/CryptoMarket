@@ -26,7 +26,7 @@ const Coinlist= ({data}) => {
         <div className="tbl-tr  tbl-tr-body" key={crypto.market_cap_rank}>
           <div className="tbl-td rank"><span>{crypto.market_cap_rank}</span></div>
           <div className="tbl-td name"><Link href={`/coinDetail/${crypto.id.toLowerCase()}`}><span><img src={crypto.image} alt="/" width={28} /></span><p>{crypto.name}</p><p>{crypto.symbol.toUpperCase()}</p></Link></div>
-          <div className="tbl-td prc"><span>{crypto.current_price.toLocaleString('en-US')}</span></div>
+          <div className="tbl-td prc"><span>{crypto.current_price < 0.01 ? crypto.current_price.toFixed(8) : crypto.current_price.toLocaleString('en-US')}</span></div>
           <div className="tbl-td chng24h" style={{"color":`${crypto.price_change_percentage_24h >= 0 ? "#16c784" : "#b52d2d"}`}}><span>{crypto.price_change_percentage_24h ? crypto.price_change_percentage_24h.toLocaleString('en-US',{maximumFractionDigits:2}): "0"}%</span></div>
           <div className="tbl-td mrktcp"><span>{crypto.market_cap.toLocaleString('en-US')}</span></div>
           <div className="tbl-td vlm24h"><span>{crypto.total_volume.toLocaleString('en-US')}</span></div>
