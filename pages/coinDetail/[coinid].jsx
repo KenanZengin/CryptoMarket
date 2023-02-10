@@ -20,7 +20,7 @@ const CoinDetail = ({data}) => {
 								<small>{data.symbol.toUpperCase()}</small>
 						</div>
 						<div className="price">
-								<h2>${data.market_data.current_price.usd.toLocaleString()}</h2>
+								<h2>${data.market_data.current_price.usd < 0.01 ? data.market_data.current_price.usd.toFixed(8) : data.market_data.current_price.usd.toLocaleString('en-US')}</h2>
 								<span style={{"backgroundColor":`${data.price_change_percentage_24h >= 0 ? "#16c784" : "#b52d2d"}`}}>{data.market_data.price_change_percentage_24h.toFixed(2)}%</span>
 						</div>
 						<div className="btc-eth-qvlnt">

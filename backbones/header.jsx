@@ -47,11 +47,11 @@ const Header = () => {
   const HeadNavMenu = [
     {
         navTitle: "Cryptocurrencies",
-        navUrl: "#Cryptocurrencies"
+        navUrl: ""
     },
     {
         navTitle: "Exchanges",
-        navUrl: "#Exchanges"
+        navUrl: "exchanges"
     },
     {
         navTitle: "Learn Blockchain",
@@ -78,7 +78,7 @@ const Header = () => {
                     {HeadNavMenu.map((item) => {
                         return (
                           <Nav.Item key={item.navTitle}>                          
-                            <Link href={item.navUrl} >
+                            <Link href={`/${item.navUrl}`} >
                                 <p className="nav-link">{item.navTitle}</p>
                             </Link>
                           </Nav.Item>

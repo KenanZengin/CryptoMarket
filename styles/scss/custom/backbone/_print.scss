@@ -1,6 +1,6 @@
 .container > *, .container-fluid > *{
 
-
+        
     @include BootstrapMaxWidthResponsive(1k){
         padding: 15px 275px !important    
     }

@@ -1,0 +1,11 @@
+.progressBar{
+    height: 8px;
+    background-color: #323731;
+    border-radius: 10px;
+    &-width{
+        width: var(--wdth);
+        height: 8px;
+        background-color:#646b80;
+        border-radius: 10px;
+    }
+}

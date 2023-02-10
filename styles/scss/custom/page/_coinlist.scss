@@ -44,6 +44,18 @@
                         max-height: 28px;
                     }
                 }
+                .scr{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 0 3px;
+                    .progressBar{
+                        width: 40%;;
+                    }
+                    span{
+                        width: 5%;
+                    }
+                }
             }                  
         }
         .tbl-thead{
