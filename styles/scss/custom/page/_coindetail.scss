@@ -147,4 +147,30 @@
             
         }
     }
+    &-bottom{
+        ul{
+            li{
+                background-color: #181d1d;
+                border-radius: 10px;
+                button{                   
+                    color: rgb(161, 167, 187) !important;
+                    &:focus{
+                        background-color: #181d1d !important;
+                    }
+                }
+            }
+        }
+        .main{
+            background-color: #181d1d;
+            .markettable{
+                padding: 0 !important;
+                .tbl-thead{
+                    background-color: transparent;
+                }
+                .tbl-tbody .tbl-tr{
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
 }

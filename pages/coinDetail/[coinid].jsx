@@ -1,5 +1,9 @@
 import Link from "next/link";
 import { Container } from "react-bootstrap";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+import Markets from './markets';
+import Overview from './overview';
 const CoinDetail = ({data}) => {
 
 	const h24change = (data.market_data.current_price.usd-data.market_data.low_24h.usd)/(data.market_data.high_24h.usd-data.market_data.low_24h.usd)*100;
@@ -131,6 +135,16 @@ const CoinDetail = ({data}) => {
 								</div>
 							</div>
 						</div>		
+				</div>
+				<div className="coindetail-bottom">
+					<Tabs>
+						<Tab eventKey="Overview" title="Overview">
+							<Overview />
+						</Tab>
+						<Tab eventKey="Markets" title="Markets">
+							<Markets data={data}/>
+						</Tab>
+					</Tabs>
 				</div>
 			</Container>
 		</div>
