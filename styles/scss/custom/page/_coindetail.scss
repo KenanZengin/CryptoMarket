@@ -150,18 +150,20 @@
     &-bottom{
         ul{
             li{
-                background-color: #181d1d;
+                background-color:$site-clr-bg-22 ;
                 border-radius: 10px;
-                button{                   
-                    color: rgb(161, 167, 187) !important;
+                button{              
+                    background-color: $site-clr-bg-22!important;     
+                    color: $site-clr-text-11  !important;
+                    border-bottom: 1px solid $f-wht !important;
                     &:focus{
-                        background-color: #181d1d !important;
+                        background-color: $site-clr-bg-22 !important;
                     }
                 }
             }
         }
         .main{
-            background-color: #181d1d;
+            background-color: $site-clr-bg-22;
             .markettable{
                 padding: 0 !important;
                 .tbl-thead{

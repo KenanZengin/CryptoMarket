@@ -1,7 +1,8 @@
+import Chart from "./chart"
 
 const Overview = () => {
   return (
-    <div>Overview</div>
+    <div><Chart /></div>
   )
 }
 

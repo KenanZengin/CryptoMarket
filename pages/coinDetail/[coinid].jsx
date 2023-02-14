@@ -136,7 +136,7 @@ const CoinDetail = ({data}) => {
 							</div>
 						</div>		
 				</div>
-				<div className="coindetail-bottom">
+				<div className="coindetail-bottom" >
 					<Tabs>
 						<Tab eventKey="Overview" title="Overview">
 							<Overview />
