@@ -127,7 +127,7 @@ const Header = () => {
                             })
                             .map((crypto,i)=>(
                                 i < 6 
-                                ?<div className="popover-item-detay" key={i} >
+                                ?<div className="popover-item-detay" key={crypto.symbol} >
                                   <div className="item-left">
                                     <img src={crypto.image} alt="/" width={20} />
                                     <p>{crypto.name}</p>

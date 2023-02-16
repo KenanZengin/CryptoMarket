@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { Container } from "react-bootstrap";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import { Container, Tab, Tabs } from "react-bootstrap";
 import Markets from './markets';
 import Overview from './overview';
 const CoinDetail = ({data}) => {
@@ -137,7 +135,7 @@ const CoinDetail = ({data}) => {
 						</div>		
 				</div>
 				<div className="coindetail-bottom" >
-					<Tabs>
+					<Tabs id="coindetailtabs">
 						<Tab eventKey="Overview" title="Overview">
 							<Overview />
 						</Tab>

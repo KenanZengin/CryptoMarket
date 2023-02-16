@@ -18,7 +18,7 @@ const Markets = ({data}) => {
         </div>
         <div className="tbl-tbody">
           {data.tickers?.map((data,i)=>(
-            <div className="tbl-tr tbl-tr-body">
+            <div key={i + 1} className="tbl-tr tbl-tr-body">
               <div className="tbl-td rank">{i + 1}</div>
               <div className="tbl-td name">{data.market.name}</div>
               <div className="tbl-td pr"> {data.base.length > 10 ? `${data.coin_id.toUpperCase() }/ ${data.target_coin_id.toUpperCase()}`: `${data.base }/ ${data.target}`} </div>
@@ -28,7 +28,7 @@ const Markets = ({data}) => {
               <div className="tbl-td scr">{data.trust_score}</div>
             </div>
           ))}
-        </div>   
+        </div>
       </div>
     </div>
   )

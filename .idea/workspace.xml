@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f868e717-16cc-4d70-9015-4b606ef2a39d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/backbones/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/backbones/header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/coinDetail/[coinid].jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coinDetail/[coinid].jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/coinDetail/markets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/coinDetail/markets.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/scss/custom/page/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/scss/custom/page/_page.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2IE5ARUbIiEaqULO9cECFfF3sGy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WebMaster/Repositories/GitHub/static-tweets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.NPM Run Dev">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="NPM Run Build" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="NPM Run Dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2">
+        <option name="FwBeforeLaunchTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="npm.NPM Run Build" />
+      <item itemvalue="npm.NPM Run Dev" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f868e717-16cc-4d70-9015-4b606ef2a39d" name="Changes" comment="" />
+      <created>1669733758349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669733758349</updated>
+      <workItem from="1669733759504" duration="3300000" />
+      <workItem from="1669737114087" duration="15000" />
+      <workItem from="1669796476383" duration="28000" />
+      <workItem from="1669796531803" duration="6236000" />
+      <workItem from="1669808541821" duration="16456000" />
+      <workItem from="1670329894145" duration="579000" />
+      <workItem from="1670330491343" duration="1526000" />
+      <workItem from="1671532535170" duration="343000" />
+      <workItem from="1671532899381" duration="12569000" />
+      <workItem from="1671637874641" duration="6427000" />
+      <workItem from="1672137022245" duration="1056000" />
+      <workItem from="1672149302116" duration="204000" />
+      <workItem from="1672151345396" duration="14140000" />
+      <workItem from="1672904944871" duration="10135000" />
+      <workItem from="1672932904973" duration="1558000" />
+      <workItem from="1672995273225" duration="10254000" />
+      <workItem from="1673012717426" duration="1358000" />
+      <workItem from="1673264821200" duration="12000" />
+      <workItem from="1673265207258" duration="3856000" />
+      <workItem from="1673274411499" duration="6293000" />
+      <workItem from="1673537223863" duration="533000" />
+      <workItem from="1673874434086" duration="253000" />
+      <workItem from="1673874703568" duration="9000" />
+      <workItem from="1676294232581" duration="887000" />
+      <workItem from="1676303071856" duration="1299000" />
+      <workItem from="1676305127852" duration="582000" />
+      <workItem from="1676363016342" duration="9000" />
+      <workItem from="1676563043284" duration="1487000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
