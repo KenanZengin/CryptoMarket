@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Markets = ({data}) => {
   
@@ -25,7 +24,7 @@ const Markets = ({data}) => {
               <div className="tbl-td prc">{data.last < 0.1 ? data.last.toFixed(6) : data.last.toLocaleString('en-US',{maximumFractionDigits:2})}</div>
               <div className="tbl-td sprd"> %{data.bid_ask_spread_percentage ? data.bid_ask_spread_percentage.toFixed(2):"--"}</div>
               <div className="tbl-td vlm24h">{data.converted_volume.usd.toLocaleString('en-US')}</div>
-              <div className="tbl-td scr">{data.trust_score}</div>
+              <div className="tbl-td scr"><div className="circle" style={{"--bgClr":`${data.trust_score == "green"} `? "green" : "red"}}></div></div>
             </div>
           ))}
         </div>

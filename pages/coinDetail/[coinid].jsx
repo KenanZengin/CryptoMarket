@@ -134,7 +134,7 @@ const CoinDetail = ({data}) => {
 							</div>
 						</div>		
 				</div>
-				<div className="coindetail-bottom" >
+				<div className="coindetail-bottom" style={{"position":"relative"}} >
 					<Tabs id="coindetailtabs">
 						<Tab eventKey="Overview" title="Overview">
 							<Overview />
