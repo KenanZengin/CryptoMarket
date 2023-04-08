@@ -9,3 +9,5 @@ Komut Satırına " git clone https://github.com/KenanZengin/CryptoMarket.git" bu
 
 ##### Projeyi PC'de Çalıştırma
 Komut Satırına öncelikle "npm i" diyerek gerekli paketleri indirmeniz gerek daha sonra terminalde "npm run dev" diyerek projeyi "http://localhost:3000/" portunda görebilirsiniz
+
+Proje demosu : https://crypto-market-8ul6-mtdk2609u-kenanzengin.vercel.app/
